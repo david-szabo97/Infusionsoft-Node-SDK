@@ -1,0 +1,41 @@
+{
+  "name": "infusionsoft-sdk",
+  "version": "0.0.1",
+  "description": "Infusionsoft Node.js SDK",
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/sdk.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/standard",
+    "fix": "./node_modules/.bin/standard --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david-szabo97/Infusionsoft-Node-SDK.git"
+  },
+  "keywords": [
+    "infusionsoft",
+    "sdk"
+  ],
+  "author": "Dávid Szabó <david.szabo97@gmail.com> (https://github.com/david-szabo97)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/david-szabo97/Infusionsoft-Node-SDK/issues"
+  },
+  "homepage": "https://github.com/david-szabo97/Infusionsoft-Node-SDK#readme",
+  "devDependencies": {
+    "husky": "^0.15.0-rc.13",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "xmlrpc": "^1.3.2"
+  }
+}
