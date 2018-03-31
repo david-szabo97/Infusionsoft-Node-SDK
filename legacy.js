@@ -1,4 +1,6 @@
 const XmlApi = require('./lib/xml')
+const path = require('path')
+const fs = require('fs')
 
 class InfusionsoftLegacy {
   constructor ({ appName, privateKey }) {
@@ -16,7 +18,8 @@ class InfusionsoftLegacy {
     this.xml = new XmlApi({
       xmlrpc: {
         clientOptions: {
-          url: 'https://' + this._appName + '.infusionsoft.com/api/xmlrpc'
+          url: 'https://' + this._appName + '.infusionsoft.com/api/xmlrpc',
+          ca: fs.readFileSync(path.join(__dirname, 'is-cacert.pem'))
         },
         methodCallMutators: [
           ([ method, params ]) => ([ method, [ this._privateKey, ...params ] ])
