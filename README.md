@@ -5,11 +5,11 @@ Infusionsoft Node.js SDK
 
 **Yarn**
 
-`yarn add infusionsoft-sdk`
+`yarn add infusionsoft-node-sdk`
 
 **NPM**
 
-`npm i infusionsoft-sdk`
+`npm i infusionsoft-node-sdk`
 
 ## Versioning
 
