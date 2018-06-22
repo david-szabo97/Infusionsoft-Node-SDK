@@ -1,6 +1,8 @@
 Infusionsoft Node.js SDK
 =========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/david-szabo97/Infusionsoft-Node-SDK.svg)](https://greenkeeper.io/)
+
 ## Installation
 
 **Yarn**
